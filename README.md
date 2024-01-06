@@ -20,27 +20,27 @@ Command to run:
 
 **Payloads with api endpoint:**
 
-POST /api/auth/signup 
+**POST** /api/auth/signup 
 
 Payload: {"firstname": "demo", "lastname": "demo", "email": "demo@gmail.com", "password": "12345"}
 
-POST /api/auth/login
+**POST** /api/auth/login
 
 Payload: {"email": "demo@gmail.com", "password": "12345"}
 
-GET /api/notes
+**GET** /api/notes
 
 Payload: None
 
 
-POST /api/notes
+**POST** /api/notes
 
 Payload: {
     "note": "first note of manaal"
 }
 
 
-PUT /api/notes/:id
+**PUT** /api/notes/:id
 
 Payload: {
     "note": "first note of manaal",
@@ -50,17 +50,17 @@ Payload: {
 Params: NoteId
 
 
-GET /api/notes/:id
+**GET** /api/notes/:id
 
 Params: NoteId
 
 
-DELETE /api/notes/:id
+**DELETE** /api/notes/:id
 
 Params: NoteId
 
 
-POST /api/notes/:id/share
+**POST** /api/notes/:id/share
 
 Payload: {
     "shared": [userIds]
@@ -69,7 +69,7 @@ Payload: {
 Params: NoteId
 
 
-GET /api/search
+**GET** /api/search
 
 Query: q=keyword
 
